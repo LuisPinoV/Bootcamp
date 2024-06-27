@@ -6,3 +6,4 @@ Este entorno de ejecucion incluira todas las entregas de codigo que se hicieron 
 -Entorno Backend .NET sql
 
 -Frontend .NET
+-Frontend node
