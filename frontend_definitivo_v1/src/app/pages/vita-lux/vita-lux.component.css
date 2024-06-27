@@ -1,0 +1,14 @@
+button {
+    background-color: #00ffbfbd; /* Color de fondo */
+    color: rgb(0, 0, 0); /* Color de texto */
+    border: black; /* Sin bordes */
+    padding: 5px 10px; /* Padding alrededor del texto */
+    text-align: center; /* Alineación del texto */
+    text-decoration: none; /* Sin decoración de texto */
+    display: inline-block; /* Tipo de display */
+    font-size: 16px; /* Tamaño del texto */
+    margin: 4px 2px; /* Margen alrededor del botón */
+    cursor: pointer; /* Cursor tipo pointer */
+    border-radius: 5px; /* Bordes redondeados */
+  }
+  
