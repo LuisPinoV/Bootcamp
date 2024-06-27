@@ -10,7 +10,6 @@ using Watson.ORM;
 using Watson.ORM.Core;
 using System.Collections.Generic;
 using System.Drawing.Printing;
-using Microsoft.Extensions.Options;
 
 //aqui se ponen los servicios
 
@@ -19,7 +18,7 @@ using Microsoft.Extensions.Options;
 //  1.1) delete
 //2) con eso hecho, entender los servicios q tiene el profe
 //  2.1) /home es el Controller
-// /Create es el servicio post
+    // /Create es el servicio post
 
 namespace test1.Classes
 {
@@ -28,9 +27,9 @@ namespace test1.Classes
         //datos paciente: ID, edad, Sexo
         public string? id_paciente { get; set; } //null
         public int sexo { get; set; }
-        public int edad { get; set; }
+        public int edad {  get; set; }
         //signos vitales
-        public int rpm { get; set; }
+        public int rpm {  get; set; }
         public int pulse { get; set; }
         public int pres { get; set; }
         public double? temp { get; set; }
@@ -75,108 +74,40 @@ namespace test1.Classes
             int i = 0;
             //foreach (var e in Estaciones)
             //{
-            Mediciones obj = new Mediciones();
-            //generacion datos
-            int id_num = random.Next(100000, 999999);
-            string id_p = "ID" + id_num.ToString(); //funcion genera ID
+                Mediciones obj = new Mediciones();
+                //generacion datos
+                int id_num = random.Next(100000,999999);
+                string id_p = "ID"+id_num.ToString(); //funcion genera ID
 
-            int sex = random.Next(0, 2);
-            int edad = random.Next(0, 131);
-            //sv
-            int rpm = random.Next(8, 41);
-            int pulse = random.Next(0, 181);
-            int pres = random.Next(70, 141);
-            double temp = random.Next(33, 43) + (random.Next(0, 11) * 0.1);
+                int sex = random.Next(0, 2);
+                int edad = random.Next(0, 131);
+                //sv
+                int rpm = random.Next(8, 41);
+                int pulse = random.Next(0, 181);
+                int pres = random.Next(70, 141);
+                double temp = random.Next(33, 43) + random.Next(0, 11)*0.1 ; 
 
-            //asignacion
-            obj.id_paciente = id_p;
-            obj.edad = edad;
-            obj.sexo = sex;
-            obj.rpm = rpm;
-            obj.pres = pres;
-            obj.pulse = pulse;
-            obj.temp = temp;
-
-            lista.Add(obj);
-            this.Insert(obj);
-            i++;
+                //asignacion
+                obj.id_paciente = id_p;
+                obj.edad = edad;
+                obj.sexo = sex;
+                obj.rpm = rpm;
+                obj.pres = pres;
+                obj.pulse = pulse;
+                obj.temp = temp;
+                
+                lista.Add(obj);
+                this.Insert(obj);
+                i++;
             //}
             return JsonConvert.SerializeObject(lista); ;
         }
-        //servicios 
 
         public string getAllData() //get
         {
             List<PacienteModel> data = orm.SelectMany<PacienteModel>();
             return JsonConvert.SerializeObject(data);
-        }
-
-        //servicios de filtro
-        public string search(int id)
-        {
-            List<PacienteModel> data = orm.SelectMany<PacienteModel>();
-            return JsonConvert.SerializeObject(data.Where(item => (item.Id == id)));
-        }
-
-        public string ID(string id_paciente)
-        {
-            List<PacienteModel> data = orm.SelectMany<PacienteModel>();
-            return JsonConvert.SerializeObject(data.Where(item => (item.Id_paciente!.Equals(id_paciente))));
-        }
-
-        public string sexo(int sexo)
-        {
-            List<PacienteModel> data = orm.SelectMany<PacienteModel>();
-            return JsonConvert.SerializeObject(data.Where(item => (item.Sexo == sexo)));
-        }
-
-        //servicios de conteo
-
-        public string contar_pacientes()
-        {
-            List<PacienteModel> data = orm.SelectMany<PacienteModel>();
-            return JsonConvert.SerializeObject(data.Count());
-
-        }
-
-        public string contar_sexo(int sexo)
-        {
-            List<PacienteModel> data = orm.SelectMany<PacienteModel>();
-            return JsonConvert.SerializeObject(data.Count(item => (item.Sexo == sexo)));
-
-        }
-
-        //servicios de estadistica
-
-        public string media_rpm()
-        {
-            List<PacienteModel> data = orm.SelectMany<PacienteModel>();
-            return JsonConvert.SerializeObject(data.Average(item => item.Rpm));
-        }
-
-        public string media_pulse()
-        {
-            List<PacienteModel> data = orm.SelectMany<PacienteModel>();
-            return JsonConvert.SerializeObject(data.Average(item => item.Pulse));
-        }
-
-        public string media_pres()
-        {
-            List<PacienteModel> data = orm.SelectMany<PacienteModel>();
-            return JsonConvert.SerializeObject(data.Average(item => item.Pres));
-        }
-
-        public string media_temp()
-        {
-            List<PacienteModel> data = orm.SelectMany<PacienteModel>();
-            return JsonConvert.SerializeObject(data.Average(item => item.Temp));
-        }
-
-        public string moda_sexo()
-        {
-            List<PacienteModel> data = orm.SelectMany<PacienteModel>();
-            return JsonConvert.SerializeObject(data.Where(p => p.Sexo.HasValue).GroupBy(p => p.Sexo));
-        }
+        }  
     }
 }
 

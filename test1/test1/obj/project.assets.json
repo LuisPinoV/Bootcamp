@@ -4181,19 +4181,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Larsi\\.nuget\\packages\\": {}
+    "C:\\Users\\Martín Gottschalk\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Larsi\\OneDrive\\Escritorio\\test1\\test1\\test1\\test1.csproj",
+      "projectUniqueName": "C:\\Users\\Martín Gottschalk\\Documents\\GitHub\\Bootcamp\\test1\\test1\\test1.csproj",
       "projectName": "test1",
-      "projectPath": "C:\\Users\\Larsi\\OneDrive\\Escritorio\\test1\\test1\\test1\\test1.csproj",
-      "packagesPath": "C:\\Users\\Larsi\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Larsi\\OneDrive\\Escritorio\\test1\\test1\\test1\\obj\\",
+      "projectPath": "C:\\Users\\Martín Gottschalk\\Documents\\GitHub\\Bootcamp\\test1\\test1\\test1.csproj",
+      "packagesPath": "C:\\Users\\Martín Gottschalk\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Martín Gottschalk\\Documents\\GitHub\\Bootcamp\\test1\\test1\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Larsi\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Martín Gottschalk\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -4201,6 +4201,7 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -4280,7 +4281,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.204/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.300/PortableRuntimeIdentifierGraph.json"
       }
     }
   }
