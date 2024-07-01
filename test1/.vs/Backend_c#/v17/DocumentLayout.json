@@ -1,18 +1,14 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\Larsi\\OneDrive\\Escritorio\\test1\\test1\\",
+  "WorkspaceRootPath": "C:\\Users\\Marcial\\Documents\\GitHub\\Bootcamp\\test1\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{13740A0C-9B8B-4917-8BC9-C385C99BD2C9}|test1\\test1.csproj|C:\\Users\\Larsi\\OneDrive\\Escritorio\\test1\\test1\\test1\\models\\pacientemodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{13740A0C-9B8B-4917-8BC9-C385C99BD2C9}|test1\\test1.csproj|solutionrelative:test1\\models\\pacientemodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{13740A0C-9B8B-4917-8BC9-C385C99BD2C9}|test1\\test1.csproj|c:\\users\\marcial\\documents\\github\\bootcamp\\test1\\test1\\controllers\\idcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{13740A0C-9B8B-4917-8BC9-C385C99BD2C9}|test1\\test1.csproj|solutionrelative:test1\\controllers\\idcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{13740A0C-9B8B-4917-8BC9-C385C99BD2C9}|test1\\test1.csproj|C:\\Users\\Larsi\\OneDrive\\Escritorio\\test1\\test1\\test1\\classes\\simulador.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{13740A0C-9B8B-4917-8BC9-C385C99BD2C9}|test1\\test1.csproj|C:\\Users\\Marcial\\Documents\\GitHub\\Bootcamp\\test1\\test1\\classes\\simulador.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{13740A0C-9B8B-4917-8BC9-C385C99BD2C9}|test1\\test1.csproj|solutionrelative:test1\\classes\\simulador.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{13740A0C-9B8B-4917-8BC9-C385C99BD2C9}|test1\\test1.csproj|c:\\users\\larsi\\onedrive\\escritorio\\test1\\test1\\test1\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{13740A0C-9B8B-4917-8BC9-C385C99BD2C9}|test1\\test1.csproj|solutionrelative:test1\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -35,40 +31,27 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "PacienteModel.cs",
-              "DocumentMoniker": "C:\\Users\\Larsi\\OneDrive\\Escritorio\\test1\\test1\\test1\\Models\\PacienteModel.cs",
-              "RelativeDocumentMoniker": "test1\\Models\\PacienteModel.cs",
-              "ToolTip": "C:\\Users\\Larsi\\OneDrive\\Escritorio\\test1\\test1\\test1\\Models\\PacienteModel.cs",
-              "RelativeToolTip": "test1\\Models\\PacienteModel.cs",
-              "ViewState": "AQIAAAMAAAAAAAAAAAAAAAQAAAAAAAAA",
+              "Title": "IDController.cs",
+              "DocumentMoniker": "C:\\Users\\Marcial\\Documents\\GitHub\\Bootcamp\\test1\\test1\\Controllers\\IDController.cs",
+              "RelativeDocumentMoniker": "test1\\Controllers\\IDController.cs",
+              "ToolTip": "C:\\Users\\Marcial\\Documents\\GitHub\\Bootcamp\\test1\\test1\\Controllers\\IDController.cs",
+              "RelativeToolTip": "test1\\Controllers\\IDController.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAACEAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-11T21:40:07.407Z",
+              "WhenOpened": "2024-07-01T20:09:48.405Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
               "Title": "Simulador.cs",
-              "DocumentMoniker": "C:\\Users\\Larsi\\OneDrive\\Escritorio\\test1\\test1\\test1\\Classes\\Simulador.cs",
+              "DocumentMoniker": "C:\\Users\\Marcial\\Documents\\GitHub\\Bootcamp\\test1\\test1\\Classes\\Simulador.cs",
               "RelativeDocumentMoniker": "test1\\Classes\\Simulador.cs",
-              "ToolTip": "C:\\Users\\Larsi\\OneDrive\\Escritorio\\test1\\test1\\test1\\Classes\\Simulador.cs",
+              "ToolTip": "C:\\Users\\Marcial\\Documents\\GitHub\\Bootcamp\\test1\\test1\\Classes\\Simulador.cs",
               "RelativeToolTip": "test1\\Classes\\Simulador.cs",
-              "ViewState": "AQIAAKUAAAAAAAAAAAAAALIAAAAJAAAA",
+              "ViewState": "AQIAAG8AAAAAAAAAAAAowIQAAAAkAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-06-11T20:37:09.07Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "HomeController.cs",
-              "DocumentMoniker": "C:\\Users\\Larsi\\OneDrive\\Escritorio\\test1\\test1\\test1\\Controllers\\HomeController.cs",
-              "RelativeDocumentMoniker": "test1\\Controllers\\HomeController.cs",
-              "ToolTip": "C:\\Users\\Larsi\\OneDrive\\Escritorio\\test1\\test1\\test1\\Controllers\\HomeController.cs",
-              "RelativeToolTip": "test1\\Controllers\\HomeController.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABwAAAAJAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-11T22:08:56.737Z",
               "EditorCaption": ""
             }
           ]

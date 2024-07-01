@@ -124,6 +124,12 @@ namespace test1.Classes
             return JsonConvert.SerializeObject(data.Where(item => (item.Id_paciente!.Equals(id_paciente))));
         }
 
+        public string getPacienteData(string id_pa) //deberia devoler los datos de solo ese paciente!!
+        {
+            List<PacienteModel> data = orm.SelectMany<PacienteModel>();
+            return JsonConvert.SerializeObject(data.Where(item => (item.Id_paciente == id_pa)));
+        }
+
         public string sexo(int sexo)
         {
             List<PacienteModel> data = orm.SelectMany<PacienteModel>();
