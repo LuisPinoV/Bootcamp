@@ -88,6 +88,7 @@
             label6.Size = new Size(38, 15);
             label6.TabIndex = 11;
             label6.Text = "label6";
+            label6.Click += label6_Click;
             // 
             // label5
             // 
@@ -97,6 +98,7 @@
             label5.Size = new Size(38, 15);
             label5.TabIndex = 10;
             label5.Text = "label5";
+            label5.Click += label5_Click;
             // 
             // label4
             // 
