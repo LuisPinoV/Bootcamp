@@ -11,6 +11,10 @@ using Watson.ORM.Core;
 using System.Collections.Generic;
 using System.Drawing.Printing;
 using Microsoft.Extensions.Options;
+using MathNet.Numerics.Statistics;
+using static System.Runtime.InteropServices.JavaScript.JSType;
+using System.Timers;
+
 
 //aqui se ponen los servicios
 
@@ -38,9 +42,7 @@ namespace test1.Classes
     public class Simulador
     {
         private Watson.ORM.WatsonORM orm { get; set; }
-
-        //para probar, dejare esto en pie, para saber lo q hace
-        //protected string[] Estaciones = ["Estacion1", "Estacion2", "Estacion3", "Estacion4", "Estacion5"];
+        private System.Timers.Timer updateTimer;
 
         public Simulador()
         {
@@ -49,7 +51,13 @@ namespace test1.Classes
             this.orm.InitializeDatabase();
             this.orm.InitializeTable(typeof(PacienteModel));
 
+            updateTimer = new System.Timers.Timer(5000);
+            updateTimer.Elapsed += OnUpdateEvent;
+            updateTimer.AutoReset = true; // Esto hará que se repita
+            updateTimer.Enabled = true; // Inicia el Timer
+
         }
+
         private void Insert(Mediciones obj) //fx insertar
         {
             PacienteModel entidad = new PacienteModel
@@ -104,13 +112,33 @@ namespace test1.Classes
             return JsonConvert.SerializeObject(lista); ;
         }
         //servicios 
-
         public string getAllData() //get
         {
             List<PacienteModel> data = orm.SelectMany<PacienteModel>();
             return JsonConvert.SerializeObject(data);
         }
+        //servicio de update
+        public string actualizar()
+        {
+            List<PacienteModel> data = orm.SelectMany<PacienteModel>();
+            Random random = new Random();
 
+            foreach (var paciente in data)
+            {
+                paciente.Rpm = random.Next(12, 25);
+                paciente.Pulse = random.Next(60, 100);
+                paciente.Pres = random.Next(90, 140);
+                paciente.Temp = Math.Round(random.NextDouble() * (39.0 - 36.0) + 36.0, 1);
+
+                orm.Update(paciente);
+            }
+            return JsonConvert.SerializeObject(data);
+        }
+        // Método que será llamado por el Timer
+        private void OnUpdateEvent(object source, ElapsedEventArgs e)
+        {
+            actualizar();
+        }
         //servicios de filtro
         public string search(int id)
         {
@@ -135,6 +163,17 @@ namespace test1.Classes
             List<PacienteModel> data = orm.SelectMany<PacienteModel>();
             return JsonConvert.SerializeObject(data.Where(item => (item.Sexo == sexo)));
         }
+        //rango etario 
+
+        //servicios de alertas 
+        public string alerta_rpm()
+        {
+            List<PacienteModel> data = orm.SelectMany<PacienteModel>();
+            return JsonConvert.SerializeObject(data
+                    .Where(item => item.Rpm.HasValue)
+                    .Select(item => item.Rpm.Value <= 12 && item.Rpm.Value >= 20)
+                    .ToList());
+        }
 
         //servicios de conteo
 
@@ -154,6 +193,7 @@ namespace test1.Classes
 
         //servicios de estadistica
 
+        //medias
         public string media_rpm()
         {
             List<PacienteModel> data = orm.SelectMany<PacienteModel>();
@@ -177,11 +217,92 @@ namespace test1.Classes
             List<PacienteModel> data = orm.SelectMany<PacienteModel>();
             return JsonConvert.SerializeObject(data.Average(item => item.Temp));
         }
+        //varianzas
+        public string var_rpm()
+        {
+            List<PacienteModel> data = orm.SelectMany<PacienteModel>();
+            return JsonConvert.SerializeObject(Statistics
+                                .Variance(data.Where(item => item.Rpm.HasValue)
+                                .Select(item => (double)item.Rpm.Value)
+                                .ToArray()));
+        }
 
+        public string var_pulse()
+        {
+            List<PacienteModel> data = orm.SelectMany<PacienteModel>();
+            return JsonConvert.SerializeObject(Statistics
+                                .Variance(data.Where(item => item.Pulse.HasValue)
+                                .Select(item => (double)item.Pulse.Value)
+                                .ToArray()));
+        }
+
+        public string var_pres()
+        {
+            List<PacienteModel> data = orm.SelectMany<PacienteModel>();
+            return JsonConvert.SerializeObject(Statistics
+                                .Variance(data.Where(item => item.Pres.HasValue)
+                                .Select(item => (double)item.Pres.Value)
+                                .ToArray()));
+        }
+
+        public string var_temp()
+        {
+            List<PacienteModel> data = orm.SelectMany<PacienteModel>();
+            return JsonConvert.SerializeObject(Statistics
+                                .Variance(data.Where(item => item.Temp.HasValue)
+                                .Select(item => (double)item.Temp.Value)
+                                .ToArray()));
+        }
+
+        //desviaciones estandar
+
+        public string std_rpm()
+        {
+            List<PacienteModel> data = orm.SelectMany<PacienteModel>();
+            return JsonConvert.SerializeObject(Statistics
+                                .StandardDeviation(data.Where(item => item.Rpm.HasValue)
+                                .Select(item => (double)item.Rpm.Value)
+                                .ToArray()));
+        }
+
+        public string std_pulse()
+        {
+            List<PacienteModel> data = orm.SelectMany<PacienteModel>();
+            return JsonConvert.SerializeObject(Statistics
+                                .StandardDeviation(data.Where(item => item.Pulse.HasValue)
+                                .Select(item => (double)item.Pulse.Value)
+                                .ToArray()));
+        }
+
+        public string std_pres()
+        {
+            List<PacienteModel> data = orm.SelectMany<PacienteModel>();
+            return JsonConvert.SerializeObject(Statistics
+                                .StandardDeviation(data.Where(item => item.Pres.HasValue)
+                                .Select(item => (double)item.Pres.Value)
+                                .ToArray()));
+        }
+
+        public string std_temp()
+        {
+            List<PacienteModel> data = orm.SelectMany<PacienteModel>();
+            return JsonConvert.SerializeObject(Statistics
+                                .StandardDeviation(data.Where(item => item.Temp.HasValue)
+                                .Select(item => (double)item.Temp.Value)
+                                .ToArray()));
+        }
+
+        //modas
         public string moda_sexo()
         {
             List<PacienteModel> data = orm.SelectMany<PacienteModel>();
-            return JsonConvert.SerializeObject(data.Where(p => p.Sexo.HasValue).GroupBy(p => p.Sexo));
+            var sexValues = data.Where(item => item.Sexo.HasValue)
+                .Select(item => item.Sexo.Value)
+                .ToArray();
+            return JsonConvert.SerializeObject(sexValues.GroupBy(x => x)
+                                   .OrderByDescending(g => g.Count())
+                                   .Select(g => g.Key)
+                                   .FirstOrDefault());
         }
     }
 }

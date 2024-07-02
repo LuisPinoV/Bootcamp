@@ -41,6 +41,14 @@ namespace test1.Controllers
             Simulador sim = new Simulador();
             return sim.sexo(sexo);
         }
+        //servicio de update
+
+        [HttpGet("actualizar")]
+        public string actualizar()
+        {
+            Simulador sim = new Simulador();
+            return sim.actualizar();
+        }
 
         //servicios de conteo
 
@@ -56,6 +64,15 @@ namespace test1.Controllers
         {
             Simulador sim = new Simulador();
             return sim.contar_sexo(sexo);
+        }
+
+        //servicios de alertas
+
+        [HttpGet("alertas_rpm")]
+        public String alerta_rpm()
+        {
+            Simulador sim = new Simulador();
+            return sim.alerta_rpm();
         }
 
         //servicios de estadistica
@@ -86,6 +103,62 @@ namespace test1.Controllers
         {
             Simulador sim = new Simulador();
             return sim.media_temp();
+        }
+
+        [HttpGet("var_rpm")]
+        public String var_rpm()
+        {
+            Simulador sim = new Simulador();
+            return sim.var_rpm();
+        }
+
+        [HttpGet("var_pulse")]
+        public String var_pulse()
+        {
+            Simulador sim = new Simulador();
+            return sim.var_pulse();
+        }
+
+        [HttpGet("var_pres")]
+        public String var_pres()
+        {
+            Simulador sim = new Simulador();
+            return sim.var_pres();
+        }
+
+        [HttpGet("var_temp")]
+        public String var_temp()
+        {
+            Simulador sim = new Simulador();
+            return sim.var_temp ();
+        }
+
+        [HttpGet("std_rpm")]
+        public String std_rpm()
+        {
+            Simulador sim = new Simulador();
+            return sim.std_rpm();
+        }
+
+        [HttpGet("std_pulse")]
+        public String std_pulse()
+        {
+            Simulador sim = new Simulador();
+            return sim.std_pulse();
+        }
+
+        [HttpGet("std_pres")]
+        public String std_pres()
+        {
+            Simulador sim = new Simulador();
+            return sim.std_pres();
+        }
+
+        [HttpGet("std_temp")]
+        public String std_temp()
+        {
+            Simulador sim = new Simulador();
+            return sim.std_temp();
         }
 
         [HttpGet("moda_sexo")]
