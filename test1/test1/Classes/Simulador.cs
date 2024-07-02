@@ -97,6 +97,7 @@ namespace test1.Classes
             obj.pulse = pulse;
             obj.temp = temp;
 
+            
             lista.Add(obj);
             this.Insert(obj);
             i++;
@@ -118,15 +119,26 @@ namespace test1.Classes
             return JsonConvert.SerializeObject(data.Where(item => (item.Id == id)));
         }
 
-        public string ID(string id_paciente)
+        public string updateData(string id_pa) //post
         {
+
             List<PacienteModel> data = orm.SelectMany<PacienteModel>();
-            return JsonConvert.SerializeObject(data.Where(item => (item.Id_paciente!.Equals(id_paciente))));
+            string datos = JsonConvert.SerializeObject(data.Where(item => (item.Id_paciente == id_pa)));
+            
+            return datos;
         }
+
 
         public string getPacienteData(string id_pa) //deberia devoler los datos de solo ese paciente!!
         {
             List<PacienteModel> data = orm.SelectMany<PacienteModel>();
+            return JsonConvert.SerializeObject(data.Where(item => (item.Id_paciente == id_pa)));
+        }
+
+        public string deletePacienteData(string id_pa) //deberia devoler los datos de solo ese paciente!!
+        {
+            List<PacienteModel> data = orm.SelectMany<PacienteModel>();
+
             return JsonConvert.SerializeObject(data.Where(item => (item.Id_paciente == id_pa)));
         }
 
@@ -135,6 +147,14 @@ namespace test1.Classes
             List<PacienteModel> data = orm.SelectMany<PacienteModel>();
             return JsonConvert.SerializeObject(data.Where(item => (item.Sexo == sexo)));
         }
+
+
+
+
+
+
+
+
 
         //servicios de conteo
 
@@ -151,6 +171,13 @@ namespace test1.Classes
             return JsonConvert.SerializeObject(data.Count(item => (item.Sexo == sexo)));
 
         }
+
+
+
+
+
+
+
 
         //servicios de estadistica
 
