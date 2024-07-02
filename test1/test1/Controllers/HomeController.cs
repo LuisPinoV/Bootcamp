@@ -21,20 +21,6 @@ namespace test1.Controllers
 
         //servicios de filro
 
-        [HttpGet("search/{id}")]
-        public String ide(int id)
-        {
-            Simulador sim = new Simulador();
-            return sim.search(id);
-        }
-
-        [HttpGet("ID/{id}")]
-        public String ID(string id_paciente)
-        {
-            Simulador sim = new Simulador();
-            return sim.ID(id_paciente);
-        }
-
         [HttpGet("sexo/{Sexo}")]
         public String sexo(int sexo)
         {
@@ -66,16 +52,43 @@ namespace test1.Controllers
             return sim.contar_sexo(sexo);
         }
 
-        //servicios de alertas
-
-        [HttpGet("alertas_rpm")]
-        public String alerta_rpm()
+        [HttpGet("contar_bebes")]
+        public String contar_bebes()
         {
             Simulador sim = new Simulador();
-            return sim.alerta_rpm();
+            return sim.contar_bebes();
         }
 
+        [HttpGet("contar_niños")]
+        public String contar_niños()
+        {
+            Simulador sim = new Simulador();
+            return sim.contar_niños();
+        }
+
+        [HttpGet("contar_jovenes")]
+        public String contar_jovenes()
+        {
+            Simulador sim = new Simulador();
+            return sim.contar_jovenes();
+        }
+
+        [HttpGet("contar_adultos")]
+        public String contar_adultos()
+        {
+            Simulador sim = new Simulador();
+            return sim.contar_adultos();
+        }
+
+        [HttpGet("contar_ancianos")]
+        public String contar_ancianos()
+        {
+            Simulador sim = new Simulador();
+            return sim.contar_ancianos();
+        }
         //servicios de estadistica
+
+        //medias
 
         [HttpGet("media_rpm")]
         public String media_rpm()
@@ -105,6 +118,8 @@ namespace test1.Controllers
             return sim.media_temp();
         }
 
+        //varianzas
+
         [HttpGet("var_rpm")]
         public String var_rpm()
         {
@@ -132,6 +147,8 @@ namespace test1.Controllers
             Simulador sim = new Simulador();
             return sim.var_temp ();
         }
+
+        //desviaciones estandares
 
         [HttpGet("std_rpm")]
         public String std_rpm()

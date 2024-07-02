@@ -134,23 +134,15 @@ namespace test1.Classes
             }
             return JsonConvert.SerializeObject(data);
         }
+
         // Método que será llamado por el Timer
+
         private void OnUpdateEvent(object source, ElapsedEventArgs e)
         {
             actualizar();
         }
-        //servicios de filtro
-        public string search(int id)
-        {
-            List<PacienteModel> data = orm.SelectMany<PacienteModel>();
-            return JsonConvert.SerializeObject(data.Where(item => (item.Id == id)));
-        }
 
-        public string ID(string id_paciente)
-        {
-            List<PacienteModel> data = orm.SelectMany<PacienteModel>();
-            return JsonConvert.SerializeObject(data.Where(item => (item.Id_paciente!.Equals(id_paciente))));
-        }
+        //servicios de filtro
 
         public string getPacienteData(string id_pa) //deberia devoler los datos de solo ese paciente!!
         {
@@ -163,19 +155,38 @@ namespace test1.Classes
             List<PacienteModel> data = orm.SelectMany<PacienteModel>();
             return JsonConvert.SerializeObject(data.Where(item => (item.Sexo == sexo)));
         }
-        //rango etario 
-
-        //servicios de alertas 
-        public string alerta_rpm()
-        {
-            List<PacienteModel> data = orm.SelectMany<PacienteModel>();
-            return JsonConvert.SerializeObject(data
-                    .Where(item => item.Rpm.HasValue)
-                    .Select(item => item.Rpm.Value <= 12 && item.Rpm.Value >= 20)
-                    .ToList());
-        }
 
         //servicios de conteo
+
+        public string contar_bebes()
+        {
+            List<PacienteModel> data = orm.SelectMany<PacienteModel>();
+            return JsonConvert.SerializeObject(data.Count(p => p.Edad >= 0 && p.Edad <= 4));
+        }
+
+        public string contar_niños()    
+        {
+            List<PacienteModel> data = orm.SelectMany<PacienteModel>();
+            return JsonConvert.SerializeObject(data.Count(p => p.Edad >= 5 && p.Edad <= 12));
+        }
+
+        public string contar_jovenes()
+        {
+            List<PacienteModel> data = orm.SelectMany<PacienteModel>();
+            return JsonConvert.SerializeObject(data.Count(p => p.Edad >= 13 && p.Edad <= 18));
+        }
+
+        public string contar_adultos()
+        {
+            List<PacienteModel> data = orm.SelectMany<PacienteModel>();
+            return JsonConvert.SerializeObject(data.Count(p => p.Edad >= 18 && p.Edad <= 60));
+        }
+
+        public string contar_ancianos()
+        {
+            List<PacienteModel> data = orm.SelectMany<PacienteModel>();
+            return JsonConvert.SerializeObject(data.Count(p => p.Edad >= 61));
+        }
 
         public string contar_pacientes()
         {
@@ -217,6 +228,7 @@ namespace test1.Classes
             List<PacienteModel> data = orm.SelectMany<PacienteModel>();
             return JsonConvert.SerializeObject(data.Average(item => item.Temp));
         }
+
         //varianzas
         public string var_rpm()
         {
