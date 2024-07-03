@@ -22,6 +22,7 @@ Partial Class InfoSV
     'No lo modifique con el editor de código.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(InfoSV))
         Panel1 = New Panel()
         sex = New Label()
         age = New Label()
@@ -229,8 +230,9 @@ Partial Class InfoSV
         Controls.Add(DataGridView1)
         Controls.Add(ComboBox1)
         Controls.Add(Panel1)
+        Icon = CType(resources.GetObject("$this.Icon"), Icon)
         Name = "InfoSV"
-        Text = "Form3"
+        Text = "VitaLuxx"
         Panel1.ResumeLayout(False)
         Panel1.PerformLayout()
         Panel2.ResumeLayout(False)
