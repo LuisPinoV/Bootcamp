@@ -8,24 +8,19 @@
     "net8.0-windows7.0": []
   },
   "packageFolders": {
-    "C:\\Users\\Marcial\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+    "C:\\Users\\Larsi\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Marcial\\Documents\\GitHub\\Bootcamp\\Frontend2_vb\\Frontend2_vb\\Frontend2_vb.vbproj",
+      "projectUniqueName": "C:\\Users\\Larsi\\OneDrive\\Escritorio\\Codes\\Bootcamp\\Frontend2_vb\\Frontend2_vb\\Frontend2_vb.vbproj",
       "projectName": "Frontend2_vb",
-      "projectPath": "C:\\Users\\Marcial\\Documents\\GitHub\\Bootcamp\\Frontend2_vb\\Frontend2_vb\\Frontend2_vb.vbproj",
-      "packagesPath": "C:\\Users\\Marcial\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Marcial\\Documents\\GitHub\\Bootcamp\\Frontend2_vb\\Frontend2_vb\\obj\\",
+      "projectPath": "C:\\Users\\Larsi\\OneDrive\\Escritorio\\Codes\\Bootcamp\\Frontend2_vb\\Frontend2_vb\\Frontend2_vb.vbproj",
+      "packagesPath": "C:\\Users\\Larsi\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Larsi\\OneDrive\\Escritorio\\Codes\\Bootcamp\\Frontend2_vb\\Frontend2_vb\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-      ],
       "configFilePaths": [
-        "C:\\Users\\Marcial\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Users\\Larsi\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -74,7 +69,7 @@
             "privateAssets": "none"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files (x86)\\dotnet\\sdk\\8.0.301/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.204/PortableRuntimeIdentifierGraph.json"
       }
     }
   }
