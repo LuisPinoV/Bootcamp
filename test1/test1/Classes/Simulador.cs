@@ -118,7 +118,7 @@ namespace test1.Classes
             return JsonConvert.SerializeObject(data);
         }
         //servicio de update
-        public string actualizar()
+        public string actualizar_timer()
         {
             List<PacienteModel> data = orm.SelectMany<PacienteModel>();
             Random random = new Random();
@@ -139,7 +139,23 @@ namespace test1.Classes
 
         private void OnUpdateEvent(object source, ElapsedEventArgs e)
         {
-            actualizar();
+            actualizar_timer();
+        }
+        public string actualizar()
+        {
+            List<PacienteModel> data = orm.SelectMany<PacienteModel>();
+            Random random = new Random();
+
+            foreach (var paciente in data)
+            {
+                paciente.Rpm = random.Next(12, 25);
+                paciente.Pulse = random.Next(60, 100);
+                paciente.Pres = random.Next(90, 140);
+                paciente.Temp = Math.Round(random.NextDouble() * (39.0 - 36.0) + 36.0, 1);
+
+                orm.Update(paciente);
+            }
+            return JsonConvert.SerializeObject(data);
         }
 
         //servicios de filtro
