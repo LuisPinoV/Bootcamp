@@ -14,7 +14,7 @@ Public Class InfoSV
 
         'hacer q filtre por columna
 
-        ComboBox1.DataSource = "x"
+        'ComboBox1.DataSource = "x"
         DataGridView1.DataSource = lista
 
     End Sub

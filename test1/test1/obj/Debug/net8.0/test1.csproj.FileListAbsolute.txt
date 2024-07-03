@@ -449,3 +449,4 @@ C:\Users\Larsi\OneDrive\Escritorio\Codes\Bootcamp\test1\test1\obj\Debug\net8.0\t
 C:\Users\Larsi\OneDrive\Escritorio\Codes\Bootcamp\test1\test1\obj\Debug\net8.0\test1.genruntimeconfig.cache
 C:\Users\Larsi\OneDrive\Escritorio\Codes\Bootcamp\test1\test1\obj\Debug\net8.0\ref\test1.dll
 C:\Users\Larsi\OneDrive\Escritorio\Codes\Bootcamp\test1\test1\bin\Debug\net8.0\MathNet.Numerics.dll
+C:\Users\Marcial\Documents\GitHub\Bootcamp\test1\test1\bin\Debug\net8.0\MathNet.Numerics.dll

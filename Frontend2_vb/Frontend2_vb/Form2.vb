@@ -36,7 +36,7 @@
         brush.Dispose()
     End Sub
     Private Sub Form2_campana(sender As Object, e As EventArgs) Handles MyBase.Load
-        Dim imagePath As String = "C:\Users\Larsi\OneDrive\Escritorio\campana.png"
+        Dim imagePath As String = "bell.jpeg"
         PictureBox1.Image = Image.FromFile(imagePath)
         PictureBox1.SizeMode = PictureBoxSizeMode.Zoom
         PictureBox1.Location = New Point(750, 50)
