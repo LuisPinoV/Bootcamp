@@ -39,9 +39,6 @@ namespace test1.Classes
     {
         private Watson.ORM.WatsonORM orm { get; set; }
 
-        //para probar, dejare esto en pie, para saber lo q hace
-        //protected string[] Estaciones = ["Estacion1", "Estacion2", "Estacion3", "Estacion4", "Estacion5"];
-
         public Simulador()
         {
             DatabaseSettings settings = new DatabaseSettings("./test1.db");

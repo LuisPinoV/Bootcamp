@@ -32,7 +32,7 @@ namespace test1.Controllers
         public String ID(string id_paciente)
         {
             Simulador sim = new Simulador();
-            return sim.ID(id_paciente);
+            return sim.getPacienteData(id_paciente);
         }
 
         [HttpGet("sexo/{Sexo}")]

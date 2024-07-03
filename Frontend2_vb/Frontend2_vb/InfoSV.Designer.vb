@@ -138,15 +138,18 @@ Partial Class InfoSV
         ' Label1
         ' 
         Label1.AutoSize = True
+        Label1.BackColor = SystemColors.ControlDark
+        Label1.BorderStyle = BorderStyle.Fixed3D
         Label1.Location = New Point(12, 10)
         Label1.Name = "Label1"
-        Label1.Size = New Size(36, 15)
+        Label1.Size = New Size(38, 17)
         Label1.TabIndex = 3
         Label1.Text = "Pulso"
         ' 
         ' Label7
         ' 
         Label7.AutoSize = True
+        Label7.BackColor = SystemColors.ControlDark
         Label7.Location = New Point(284, 10)
         Label7.Name = "Label7"
         Label7.Size = New Size(73, 15)
@@ -156,6 +159,7 @@ Partial Class InfoSV
         ' Label2
         ' 
         Label2.AutoSize = True
+        Label2.BackColor = SystemColors.ControlDark
         Label2.Location = New Point(109, 10)
         Label2.Name = "Label2"
         Label2.Size = New Size(32, 15)
@@ -165,6 +169,7 @@ Partial Class InfoSV
         ' Label6
         ' 
         Label6.AutoSize = True
+        Label6.BackColor = SystemColors.ControlDark
         Label6.Location = New Point(205, 10)
         Label6.Name = "Label6"
         Label6.Size = New Size(46, 15)
