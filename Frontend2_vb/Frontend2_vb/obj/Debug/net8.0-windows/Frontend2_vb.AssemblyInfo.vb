@@ -17,7 +17,7 @@ Imports System.Reflection
  Assembly: System.Reflection.AssemblyCompanyAttribute("Frontend2_vb"),  _
  Assembly: System.Reflection.AssemblyConfigurationAttribute("Debug"),  _
  Assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0"),  _
- Assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+04f7132ad9be7338d2e1fbc61ec4bbf9f38565c2"),  _
+ Assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+612d3c59f817f38bc2deb4f0eebf4b5340ffec9c"),  _
  Assembly: System.Reflection.AssemblyProductAttribute("Frontend2_vb"),  _
  Assembly: System.Reflection.AssemblyTitleAttribute("Frontend2_vb"),  _
  Assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0"),  _

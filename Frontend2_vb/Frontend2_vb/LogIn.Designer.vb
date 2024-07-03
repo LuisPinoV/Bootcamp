@@ -1,5 +1,5 @@
 ﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
-Partial Class Form1
+Partial Class LogIn
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
@@ -22,27 +22,19 @@ Partial Class Form1
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
-        Label1 = New Label()
         Log_in = New Button()
         Sign_up = New Button()
+        PictureBox1 = New PictureBox()
+        CType(PictureBox1, ComponentModel.ISupportInitialize).BeginInit()
         SuspendLayout()
-        ' 
-        ' Label1
-        ' 
-        Label1.AutoSize = True
-        Label1.BackColor = Color.IndianRed
-        Label1.Location = New Point(354, 9)
-        Label1.Name = "Label1"
-        Label1.Size = New Size(52, 15)
-        Label1.TabIndex = 0
-        Label1.Text = "VItaLuxx"
         ' 
         ' Log_in
         ' 
         Log_in.BackColor = Color.Yellow
-        Log_in.Location = New Point(322, 191)
+        Log_in.Location = New Point(368, 255)
+        Log_in.Margin = New Padding(3, 4, 3, 4)
         Log_in.Name = "Log_in"
-        Log_in.Size = New Size(129, 44)
+        Log_in.Size = New Size(147, 59)
         Log_in.TabIndex = 1
         Log_in.Text = "Log In"
         Log_in.UseVisualStyleBackColor = False
@@ -50,29 +42,38 @@ Partial Class Form1
         ' Sign_up
         ' 
         Sign_up.BackColor = Color.Orange
-        Sign_up.Location = New Point(322, 241)
+        Sign_up.Location = New Point(368, 321)
+        Sign_up.Margin = New Padding(3, 4, 3, 4)
         Sign_up.Name = "Sign_up"
-        Sign_up.Size = New Size(129, 40)
+        Sign_up.Size = New Size(147, 53)
         Sign_up.TabIndex = 2
         Sign_up.Text = "Sign_up"
         Sign_up.UseVisualStyleBackColor = False
         ' 
-        ' Form1
+        ' PictureBox1
         ' 
-        AutoScaleDimensions = New SizeF(7.0F, 15.0F)
+        PictureBox1.Location = New Point(725, 116)
+        PictureBox1.Name = "PictureBox1"
+        PictureBox1.Size = New Size(125, 62)
+        PictureBox1.TabIndex = 3
+        PictureBox1.TabStop = False
+        ' 
+        ' LogIn
+        ' 
+        AutoScaleDimensions = New SizeF(8.0F, 20.0F)
         AutoScaleMode = AutoScaleMode.Font
-        ClientSize = New Size(800, 450)
+        ClientSize = New Size(914, 600)
+        Controls.Add(PictureBox1)
         Controls.Add(Sign_up)
         Controls.Add(Log_in)
-        Controls.Add(Label1)
-        Name = "Form1"
-        Text = "Form1"
+        Margin = New Padding(3, 4, 3, 4)
+        Name = "LogIn"
+        Text = "Vitalux"
+        CType(PictureBox1, ComponentModel.ISupportInitialize).EndInit()
         ResumeLayout(False)
-        PerformLayout()
     End Sub
-
-    Friend WithEvents Label1 As Label
     Friend WithEvents Log_in As Button
     Friend WithEvents Sign_up As Button
+    Friend WithEvents PictureBox1 As PictureBox
 
 End Class
