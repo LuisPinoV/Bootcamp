@@ -12,16 +12,20 @@ Public Class InfoSV
         Dim respuesta As String = Await GetHttp("")
         Dim lista As List(Of PacienteDatos) = JsonConvert.DeserializeObject(Of List(Of PacienteDatos))(respuesta)
 
-        'hacer q filtre por columna
-
-        'ComboBox1.DataSource = "x"
         DataGridView1.DataSource = lista
+
+        'Label8.Text = String.Join(Environment.NewLine, lista.Select(Function(a) a.Id_paciente))
+        'ComboBox1.Items = String.Join(Environment.NewLine, lista.Select(Function(a) a.Id_paciente))
+
+
+
 
     End Sub
 
 
     Private Async Function GetHttp(entidad As String) As Task(Of String) 'entidad sera la url
         Dim oRequest As WebRequest = WebRequest.Create("https://localhost:7101/" + entidad)
+
         Dim oResponse As WebResponse = oRequest.GetResponse()
         Dim sr As StreamReader = New StreamReader(oResponse.GetResponseStream())
         Return Await sr.ReadToEndAsync()
@@ -32,6 +36,14 @@ Public Class InfoSV
     End Sub
 
     Private Sub DataGridView1_CellContentClick(sender As Object, e As DataGridViewCellEventArgs) Handles DataGridView1.CellContentClick
+
+    End Sub
+
+    Private Sub Label8_Click(sender As Object, e As EventArgs) Handles Label8.Click
+
+    End Sub
+
+    Private Sub NotifyIcon1_MouseDoubleClick(sender As Object, e As MouseEventArgs) Handles NotifyIcon1.MouseDoubleClick
 
     End Sub
 End Class

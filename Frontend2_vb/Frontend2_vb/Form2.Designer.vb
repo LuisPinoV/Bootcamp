@@ -31,13 +31,15 @@ Partial Class Form2
         Button2 = New Button()
         Label3 = New Label()
         PictureBox1 = New PictureBox()
+        Panel1 = New Panel()
         CType(PictureBox1, ComponentModel.ISupportInitialize).BeginInit()
+        Panel1.SuspendLayout()
         SuspendLayout()
         ' 
         ' Label1
         ' 
         Label1.AutoSize = True
-        Label1.Location = New Point(44, 32)
+        Label1.Location = New Point(19, 32)
         Label1.Name = "Label1"
         Label1.Size = New Size(63, 15)
         Label1.TabIndex = 0
@@ -46,7 +48,7 @@ Partial Class Form2
         ' Label2
         ' 
         Label2.AutoSize = True
-        Label2.Location = New Point(44, 87)
+        Label2.Location = New Point(19, 87)
         Label2.Name = "Label2"
         Label2.Size = New Size(60, 15)
         Label2.TabIndex = 1
@@ -54,7 +56,7 @@ Partial Class Form2
         ' 
         ' Button1
         ' 
-        Button1.Location = New Point(87, 137)
+        Button1.Location = New Point(62, 137)
         Button1.Name = "Button1"
         Button1.Size = New Size(75, 23)
         Button1.TabIndex = 2
@@ -63,21 +65,21 @@ Partial Class Form2
         ' 
         ' TextBox1
         ' 
-        TextBox1.Location = New Point(123, 29)
+        TextBox1.Location = New Point(98, 29)
         TextBox1.Name = "TextBox1"
         TextBox1.Size = New Size(175, 23)
         TextBox1.TabIndex = 3
         ' 
         ' TextBox2
         ' 
-        TextBox2.Location = New Point(123, 79)
+        TextBox2.Location = New Point(98, 79)
         TextBox2.Name = "TextBox2"
         TextBox2.Size = New Size(175, 23)
         TextBox2.TabIndex = 4
         ' 
         ' Button2
         ' 
-        Button2.Location = New Point(192, 137)
+        Button2.Location = New Point(167, 137)
         Button2.Name = "Button2"
         Button2.Size = New Size(75, 23)
         Button2.TabIndex = 5
@@ -87,7 +89,7 @@ Partial Class Form2
         ' Label3
         ' 
         Label3.AutoSize = True
-        Label3.Location = New Point(288, 141)
+        Label3.Location = New Point(263, 141)
         Label3.Name = "Label3"
         Label3.Size = New Size(0, 15)
         Label3.TabIndex = 6
@@ -101,25 +103,34 @@ Partial Class Form2
         PictureBox1.TabIndex = 7
         PictureBox1.TabStop = False
         ' 
+        ' Panel1
+        ' 
+        Panel1.Controls.Add(TextBox1)
+        Panel1.Controls.Add(Label1)
+        Panel1.Controls.Add(Label3)
+        Panel1.Controls.Add(Label2)
+        Panel1.Controls.Add(Button2)
+        Panel1.Controls.Add(Button1)
+        Panel1.Controls.Add(TextBox2)
+        Panel1.Location = New Point(23, 12)
+        Panel1.Name = "Panel1"
+        Panel1.Size = New Size(298, 171)
+        Panel1.TabIndex = 8
+        ' 
         ' Form2
         ' 
         AutoScaleDimensions = New SizeF(7F, 15F)
         AutoScaleMode = AutoScaleMode.Font
         ClientSize = New Size(501, 239)
+        Controls.Add(Panel1)
         Controls.Add(PictureBox1)
-        Controls.Add(Label3)
-        Controls.Add(Button2)
-        Controls.Add(TextBox2)
-        Controls.Add(TextBox1)
-        Controls.Add(Button1)
-        Controls.Add(Label2)
-        Controls.Add(Label1)
         Icon = CType(resources.GetObject("$this.Icon"), Icon)
         Name = "Form2"
         Text = "Log In"
         CType(PictureBox1, ComponentModel.ISupportInitialize).EndInit()
+        Panel1.ResumeLayout(False)
+        Panel1.PerformLayout()
         ResumeLayout(False)
-        PerformLayout()
     End Sub
 
     Friend WithEvents Label1 As Label
@@ -130,4 +141,5 @@ Partial Class Form2
     Friend WithEvents Button2 As Button
     Friend WithEvents Label3 As Label
     Friend WithEvents PictureBox1 As PictureBox
+    Friend WithEvents Panel1 As Panel
 End Class

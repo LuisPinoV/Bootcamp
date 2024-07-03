@@ -22,6 +22,7 @@ Partial Class InfoSV
     'No lo modifique con el editor de código.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        components = New ComponentModel.Container()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(InfoSV))
         Panel1 = New Panel()
         sex = New Label()
@@ -41,6 +42,8 @@ Partial Class InfoSV
         Label3 = New Label()
         ComboBox1 = New ComboBox()
         DataGridView1 = New DataGridView()
+        Label8 = New Label()
+        NotifyIcon1 = New NotifyIcon(components)
         Panel1.SuspendLayout()
         Panel2.SuspendLayout()
         CType(DataGridView1, ComponentModel.ISupportInitialize).BeginInit()
@@ -57,7 +60,7 @@ Partial Class InfoSV
         Panel1.Controls.Add(Label3)
         Panel1.Location = New Point(35, 56)
         Panel1.Name = "Panel1"
-        Panel1.Size = New Size(640, 204)
+        Panel1.Size = New Size(640, 17)
         Panel1.TabIndex = 3
         ' 
         ' sex
@@ -216,17 +219,39 @@ Partial Class InfoSV
         ' 
         ' DataGridView1
         ' 
+        DataGridView1.AllowUserToAddRows = False
+        DataGridView1.AllowUserToDeleteRows = False
+        DataGridView1.AllowUserToResizeColumns = False
+        DataGridView1.AllowUserToResizeRows = False
         DataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        DataGridView1.Location = New Point(35, 266)
+        DataGridView1.EditMode = DataGridViewEditMode.EditProgrammatically
+        DataGridView1.GridColor = SystemColors.ActiveBorder
+        DataGridView1.Location = New Point(35, 95)
         DataGridView1.Name = "DataGridView1"
-        DataGridView1.Size = New Size(640, 161)
+        DataGridView1.ReadOnly = True
+        DataGridView1.Size = New Size(640, 241)
         DataGridView1.TabIndex = 5
+        ' 
+        ' Label8
+        ' 
+        Label8.AutoSize = True
+        Label8.Location = New Point(373, 22)
+        Label8.Name = "Label8"
+        Label8.Size = New Size(41, 15)
+        Label8.TabIndex = 6
+        Label8.Text = "Label8"
+        ' 
+        ' NotifyIcon1
+        ' 
+        NotifyIcon1.Text = "NotifyIcon1"
+        NotifyIcon1.Visible = True
         ' 
         ' InfoSV
         ' 
         AutoScaleDimensions = New SizeF(7F, 15F)
         AutoScaleMode = AutoScaleMode.Font
         ClientSize = New Size(800, 450)
+        Controls.Add(Label8)
         Controls.Add(DataGridView1)
         Controls.Add(ComboBox1)
         Controls.Add(Panel1)
@@ -239,6 +264,7 @@ Partial Class InfoSV
         Panel2.PerformLayout()
         CType(DataGridView1, ComponentModel.ISupportInitialize).EndInit()
         ResumeLayout(False)
+        PerformLayout()
     End Sub
 
     Friend WithEvents Label1 As Label
@@ -259,4 +285,6 @@ Partial Class InfoSV
     Friend WithEvents Rpm As Label
     Friend WithEvents Pulse As Label
     Friend WithEvents DataGridView1 As DataGridView
+    Friend WithEvents Label8 As Label
+    Friend WithEvents NotifyIcon1 As NotifyIcon
 End Class
