@@ -39,8 +39,10 @@ Partial Class InfoSV
         Label4 = New Label()
         Label3 = New Label()
         ComboBox1 = New ComboBox()
+        DataGridView1 = New DataGridView()
         Panel1.SuspendLayout()
         Panel2.SuspendLayout()
+        CType(DataGridView1, ComponentModel.ISupportInitialize).BeginInit()
         SuspendLayout()
         ' 
         ' Panel1
@@ -212,11 +214,20 @@ Partial Class InfoSV
         ComboBox1.Size = New Size(175, 23)
         ComboBox1.TabIndex = 4
         ' 
+        ' DataGridView1
+        ' 
+        DataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        DataGridView1.Location = New Point(35, 266)
+        DataGridView1.Name = "DataGridView1"
+        DataGridView1.Size = New Size(640, 161)
+        DataGridView1.TabIndex = 5
+        ' 
         ' InfoSV
         ' 
         AutoScaleDimensions = New SizeF(7F, 15F)
         AutoScaleMode = AutoScaleMode.Font
         ClientSize = New Size(800, 450)
+        Controls.Add(DataGridView1)
         Controls.Add(ComboBox1)
         Controls.Add(Panel1)
         Name = "InfoSV"
@@ -225,6 +236,7 @@ Partial Class InfoSV
         Panel1.PerformLayout()
         Panel2.ResumeLayout(False)
         Panel2.PerformLayout()
+        CType(DataGridView1, ComponentModel.ISupportInitialize).EndInit()
         ResumeLayout(False)
     End Sub
 
@@ -245,4 +257,5 @@ Partial Class InfoSV
     Friend WithEvents Pres As Label
     Friend WithEvents Rpm As Label
     Friend WithEvents Pulse As Label
+    Friend WithEvents DataGridView1 As DataGridView
 End Class

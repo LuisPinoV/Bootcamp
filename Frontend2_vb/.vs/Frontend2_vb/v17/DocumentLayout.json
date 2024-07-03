@@ -3,40 +3,16 @@
   "WorkspaceRootPath": "C:\\Users\\Marcial\\Documents\\GitHub\\Bootcamp\\Frontend2_vb\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{64CBB463-9D5C-4B16-9E0D-FBC10AF6354C}|Frontend2_vb\\Frontend2_vb.vbproj|C:\\Users\\Marcial\\Documents\\GitHub\\Bootcamp\\Frontend2_vb\\frontend2_vb\\form2.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
-      "RelativeMoniker": "D:0:0:{64CBB463-9D5C-4B16-9E0D-FBC10AF6354C}|Frontend2_vb\\Frontend2_vb.vbproj|solutionrelative:frontend2_vb\\form2.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{64CBB463-9D5C-4B16-9E0D-FBC10AF6354C}|Frontend2_vb\\Frontend2_vb.vbproj|C:\\Users\\Marcial\\Documents\\GitHub\\Bootcamp\\Frontend2_vb\\frontend2_vb\\applicationevents.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
-      "RelativeMoniker": "D:0:0:{64CBB463-9D5C-4B16-9E0D-FBC10AF6354C}|Frontend2_vb\\Frontend2_vb.vbproj|solutionrelative:frontend2_vb\\applicationevents.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{64CBB463-9D5C-4B16-9E0D-FBC10AF6354C}|Frontend2_vb\\Frontend2_vb.vbproj|C:\\Users\\Marcial\\Documents\\GitHub\\Bootcamp\\Frontend2_vb\\frontend2_vb\\infosv.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
-      "RelativeMoniker": "D:0:0:{64CBB463-9D5C-4B16-9E0D-FBC10AF6354C}|Frontend2_vb\\Frontend2_vb.vbproj|solutionrelative:frontend2_vb\\infosv.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
+      "AbsoluteMoniker": "D:0:0:{64CBB463-9D5C-4B16-9E0D-FBC10AF6354C}|Frontend2_vb\\Frontend2_vb.vbproj|c:\\users\\marcial\\documents\\github\\bootcamp\\frontend2_vb\\frontend2_vb\\infosv.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
+      "RelativeMoniker": "D:0:0:{64CBB463-9D5C-4B16-9E0D-FBC10AF6354C}|Frontend2_vb\\Frontend2_vb.vbproj|solutionrelative:frontend2_vb\\infosv.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{64CBB463-9D5C-4B16-9E0D-FBC10AF6354C}|Frontend2_vb\\Frontend2_vb.vbproj|C:\\Users\\Marcial\\Documents\\GitHub\\Bootcamp\\Frontend2_vb\\frontend2_vb\\class1.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
       "RelativeMoniker": "D:0:0:{64CBB463-9D5C-4B16-9E0D-FBC10AF6354C}|Frontend2_vb\\Frontend2_vb.vbproj|solutionrelative:frontend2_vb\\class1.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{64CBB463-9D5C-4B16-9E0D-FBC10AF6354C}|Frontend2_vb\\Frontend2_vb.vbproj|c:\\users\\marcial\\documents\\github\\bootcamp\\frontend2_vb\\frontend2_vb\\infosv.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
-      "RelativeMoniker": "D:0:0:{64CBB463-9D5C-4B16-9E0D-FBC10AF6354C}|Frontend2_vb\\Frontend2_vb.vbproj|solutionrelative:frontend2_vb\\infosv.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{64CBB463-9D5C-4B16-9E0D-FBC10AF6354C}|Frontend2_vb\\Frontend2_vb.vbproj|C:\\Users\\Marcial\\Documents\\GitHub\\Bootcamp\\Frontend2_vb\\frontend2_vb\\form1.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
-      "RelativeMoniker": "D:0:0:{64CBB463-9D5C-4B16-9E0D-FBC10AF6354C}|Frontend2_vb\\Frontend2_vb.vbproj|solutionrelative:frontend2_vb\\form1.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{64CBB463-9D5C-4B16-9E0D-FBC10AF6354C}|Frontend2_vb\\Frontend2_vb.vbproj|C:\\Users\\Marcial\\Documents\\GitHub\\Bootcamp\\Frontend2_vb\\frontend2_vb\\form2.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
-      "RelativeMoniker": "D:0:0:{64CBB463-9D5C-4B16-9E0D-FBC10AF6354C}|Frontend2_vb\\Frontend2_vb.vbproj|solutionrelative:frontend2_vb\\form2.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{64CBB463-9D5C-4B16-9E0D-FBC10AF6354C}|Frontend2_vb\\Frontend2_vb.vbproj|C:\\Users\\Marcial\\Documents\\GitHub\\Bootcamp\\Frontend2_vb\\frontend2_vb\\form1.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
-      "RelativeMoniker": "D:0:0:{64CBB463-9D5C-4B16-9E0D-FBC10AF6354C}|Frontend2_vb\\Frontend2_vb.vbproj|solutionrelative:frontend2_vb\\form1.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{64CBB463-9D5C-4B16-9E0D-FBC10AF6354C}|Frontend2_vb\\Frontend2_vb.vbproj|C:\\Users\\Marcial\\Documents\\GitHub\\Bootcamp\\Frontend2_vb\\frontend2_vb\\form1.designer.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
-      "RelativeMoniker": "D:0:0:{64CBB463-9D5C-4B16-9E0D-FBC10AF6354C}|Frontend2_vb\\Frontend2_vb.vbproj|solutionrelative:frontend2_vb\\form1.designer.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
+      "AbsoluteMoniker": "D:0:0:{64CBB463-9D5C-4B16-9E0D-FBC10AF6354C}|Frontend2_vb\\Frontend2_vb.vbproj|C:\\Users\\Marcial\\Documents\\GitHub\\Bootcamp\\Frontend2_vb\\frontend2_vb\\infosv.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
+      "RelativeMoniker": "D:0:0:{64CBB463-9D5C-4B16-9E0D-FBC10AF6354C}|Frontend2_vb\\Frontend2_vb.vbproj|solutionrelative:frontend2_vb\\infosv.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
     }
   ],
   "DocumentGroupContainers": [
@@ -46,7 +22,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 7,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Bookmark",
@@ -59,38 +35,25 @@
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "ApplicationEvents.vb",
-              "DocumentMoniker": "C:\\Users\\Marcial\\Documents\\GitHub\\Bootcamp\\Frontend2_vb\\Frontend2_vb\\ApplicationEvents.vb",
-              "RelativeDocumentMoniker": "Frontend2_vb\\ApplicationEvents.vb",
-              "ToolTip": "C:\\Users\\Marcial\\Documents\\GitHub\\Bootcamp\\Frontend2_vb\\Frontend2_vb\\ApplicationEvents.vb",
-              "RelativeToolTip": "Frontend2_vb\\ApplicationEvents.vb",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
-              "WhenOpened": "2024-07-02T22:13:57.457Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
               "Title": "Class1.vb",
               "DocumentMoniker": "C:\\Users\\Marcial\\Documents\\GitHub\\Bootcamp\\Frontend2_vb\\Frontend2_vb\\Class1.vb",
               "RelativeDocumentMoniker": "Frontend2_vb\\Class1.vb",
               "ToolTip": "C:\\Users\\Marcial\\Documents\\GitHub\\Bootcamp\\Frontend2_vb\\Frontend2_vb\\Class1.vb",
               "RelativeToolTip": "Frontend2_vb\\Class1.vb",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAqwA8AAAAAAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
               "WhenOpened": "2024-07-02T22:11:25.797Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 0,
               "Title": "InfoSV.vb",
               "DocumentMoniker": "C:\\Users\\Marcial\\Documents\\GitHub\\Bootcamp\\Frontend2_vb\\Frontend2_vb\\InfoSV.vb",
               "RelativeDocumentMoniker": "Frontend2_vb\\InfoSV.vb",
               "ToolTip": "C:\\Users\\Marcial\\Documents\\GitHub\\Bootcamp\\Frontend2_vb\\Frontend2_vb\\InfoSV.vb",
               "RelativeToolTip": "Frontend2_vb\\InfoSV.vb",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAA3AAAA",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAAAsAAAAzAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
               "WhenOpened": "2024-06-27T02:41:02.704Z",
               "EditorCaption": ""
@@ -106,66 +69,6 @@
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
               "WhenOpened": "2024-06-26T15:56:03.791Z",
               "EditorCaption": " [Dise\u00F1o]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "Form2.vb",
-              "DocumentMoniker": "C:\\Users\\Marcial\\Documents\\GitHub\\Bootcamp\\Frontend2_vb\\Frontend2_vb\\Form2.vb",
-              "RelativeDocumentMoniker": "Frontend2_vb\\Form2.vb",
-              "ToolTip": "C:\\Users\\Marcial\\Documents\\GitHub\\Bootcamp\\Frontend2_vb\\Frontend2_vb\\Form2.vb",
-              "RelativeToolTip": "Frontend2_vb\\Form2.vb",
-              "ViewState": "AQIAAAsAAAAAAAAAAAAAwBUAAAAjAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
-              "WhenOpened": "2024-06-26T15:34:17.316Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Form2.vb [Dise\u00F1o]",
-              "DocumentMoniker": "C:\\Users\\Marcial\\Documents\\GitHub\\Bootcamp\\Frontend2_vb\\Frontend2_vb\\Form2.vb",
-              "RelativeDocumentMoniker": "Frontend2_vb\\Form2.vb",
-              "ToolTip": "C:\\Users\\Marcial\\Documents\\GitHub\\Bootcamp\\Frontend2_vb\\Frontend2_vb\\Form2.vb [Dise\u00F1o]",
-              "RelativeToolTip": "Frontend2_vb\\Form2.vb [Dise\u00F1o]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
-              "WhenOpened": "2024-06-26T15:27:19.801Z",
-              "EditorCaption": " [Dise\u00F1o]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Form1.vb",
-              "DocumentMoniker": "C:\\Users\\Marcial\\Documents\\GitHub\\Bootcamp\\Frontend2_vb\\Frontend2_vb\\Form1.vb",
-              "RelativeDocumentMoniker": "Frontend2_vb\\Form1.vb",
-              "ToolTip": "C:\\Users\\Marcial\\Documents\\GitHub\\Bootcamp\\Frontend2_vb\\Frontend2_vb\\Form1.vb",
-              "RelativeToolTip": "Frontend2_vb\\Form1.vb",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAMAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
-              "WhenOpened": "2024-06-26T15:25:40.676Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "Form1.Designer.vb",
-              "DocumentMoniker": "C:\\Users\\Marcial\\Documents\\GitHub\\Bootcamp\\Frontend2_vb\\Frontend2_vb\\Form1.Designer.vb",
-              "RelativeDocumentMoniker": "Frontend2_vb\\Form1.Designer.vb",
-              "ToolTip": "C:\\Users\\Marcial\\Documents\\GitHub\\Bootcamp\\Frontend2_vb\\Frontend2_vb\\Form1.Designer.vb",
-              "RelativeToolTip": "Frontend2_vb\\Form1.Designer.vb",
-              "ViewState": "AQIAACMAAAAAAAAAAAAowAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
-              "WhenOpened": "2024-06-25T15:34:48.249Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "Form1.vb [Dise\u00F1o]",
-              "DocumentMoniker": "C:\\Users\\Marcial\\Documents\\GitHub\\Bootcamp\\Frontend2_vb\\Frontend2_vb\\Form1.vb",
-              "RelativeDocumentMoniker": "Frontend2_vb\\Form1.vb",
-              "ToolTip": "C:\\Users\\Marcial\\source\\repos\\Frontend2_vb\\Frontend2_vb\\Form1.vb [Dise\u00F1o]",
-              "RelativeToolTip": "..\\..\\..\\..\\source\\repos\\Frontend2_vb\\Frontend2_vb\\Form1.vb [Dise\u00F1o]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
-              "WhenOpened": "2024-06-25T15:17:35.347Z"
             }
           ]
         }

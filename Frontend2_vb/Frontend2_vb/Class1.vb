@@ -1,18 +1,12 @@
 ﻿Public Class PacienteDatos
-
-    Public id_paciente As String
-    Public edad As Integer
-    Public sexo As Integer
-
+    '"Id","Id_paciente",Edad","Sexo","Rpm","Pulse","Pres","Temp"
+    Public Property Id() As String
+    Public Property Id_paciente() As String
+    Public Property Edad() As Integer
+    Public Property Sexo() As Integer
     'Signos vitales
-    Public rpm As Integer
-    Public pulse As Integer
-    Public pres As Integer
-    Public temp As Double
-
-
-
-
-
-
+    Public Property Rpm() As Integer
+    Public Property Pulse() As Integer
+    Public Property Pres() As Integer
+    Public Property Temp() As Double
 End Class
