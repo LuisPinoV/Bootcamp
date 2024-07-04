@@ -12,7 +12,7 @@
       }
     ],
     "additionalProbingPaths": [
-      "C:\\Users\\Larsi\\.dotnet\\store\\|arch|\\|tfm|",
+      "C:\\Users\\Marcial\\.dotnet\\store\\|arch|\\|tfm|",
       "C:\\Users\\Larsi\\.nuget\\packages"
     ],
     "configProperties": {
