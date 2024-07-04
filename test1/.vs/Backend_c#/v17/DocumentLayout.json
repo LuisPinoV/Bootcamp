@@ -3,16 +3,16 @@
   "WorkspaceRootPath": "C:\\Users\\Larsi\\OneDrive\\Escritorio\\Codes\\Bootcamp\\test1\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{13740A0C-9B8B-4917-8BC9-C385C99BD2C9}|test1\\test1.csproj|c:\\users\\larsi\\onedrive\\escritorio\\codes\\bootcamp\\test1\\test1\\classes\\simulador.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{13740A0C-9B8B-4917-8BC9-C385C99BD2C9}|test1\\test1.csproj|solutionrelative:test1\\classes\\simulador.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{13740A0C-9B8B-4917-8BC9-C385C99BD2C9}|test1\\test1.csproj|C:\\Users\\Larsi\\OneDrive\\Escritorio\\Codes\\Bootcamp\\test1\\test1\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{13740A0C-9B8B-4917-8BC9-C385C99BD2C9}|test1\\test1.csproj|solutionrelative:test1\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{13740A0C-9B8B-4917-8BC9-C385C99BD2C9}|test1\\test1.csproj|C:\\Users\\Larsi\\OneDrive\\Escritorio\\Codes\\Bootcamp\\test1\\test1\\controllers\\idcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{13740A0C-9B8B-4917-8BC9-C385C99BD2C9}|test1\\test1.csproj|solutionrelative:test1\\controllers\\idcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{13740A0C-9B8B-4917-8BC9-C385C99BD2C9}|test1\\test1.csproj|C:\\Users\\Larsi\\OneDrive\\Escritorio\\Codes\\Bootcamp\\test1\\test1\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{13740A0C-9B8B-4917-8BC9-C385C99BD2C9}|test1\\test1.csproj|solutionrelative:test1\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{13740A0C-9B8B-4917-8BC9-C385C99BD2C9}|test1\\test1.csproj|c:\\users\\larsi\\onedrive\\escritorio\\codes\\bootcamp\\test1\\test1\\classes\\simulador.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{13740A0C-9B8B-4917-8BC9-C385C99BD2C9}|test1\\test1.csproj|solutionrelative:test1\\classes\\simulador.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -22,7 +22,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Bookmark",
@@ -34,13 +34,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 0,
               "Title": "HomeController.cs",
               "DocumentMoniker": "C:\\Users\\Larsi\\OneDrive\\Escritorio\\Codes\\Bootcamp\\test1\\test1\\Controllers\\HomeController.cs",
               "RelativeDocumentMoniker": "test1\\Controllers\\HomeController.cs",
               "ToolTip": "C:\\Users\\Larsi\\OneDrive\\Escritorio\\Codes\\Bootcamp\\test1\\test1\\Controllers\\HomeController.cs",
               "RelativeToolTip": "test1\\Controllers\\HomeController.cs",
-              "ViewState": "AQIAAKgAAAAAAAAAAAAuwLsAAAABAAAA",
+              "ViewState": "AQIAAMoAAAAAAAAAAAAwwNwAAAAiAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-07-03T00:15:41.955Z",
               "EditorCaption": ""
@@ -53,20 +53,20 @@
               "RelativeDocumentMoniker": "test1\\Controllers\\IDController.cs",
               "ToolTip": "C:\\Users\\Larsi\\OneDrive\\Escritorio\\Codes\\Bootcamp\\test1\\test1\\Controllers\\IDController.cs",
               "RelativeToolTip": "test1\\Controllers\\IDController.cs",
-              "ViewState": "AQIAAAYAAAAAAAAAAAAAACEAAAAAAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAACEAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-07-01T20:09:48.405Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "Simulador.cs",
               "DocumentMoniker": "C:\\Users\\Larsi\\OneDrive\\Escritorio\\Codes\\Bootcamp\\test1\\test1\\Classes\\Simulador.cs",
               "RelativeDocumentMoniker": "test1\\Classes\\Simulador.cs",
               "ToolTip": "C:\\Users\\Larsi\\OneDrive\\Escritorio\\Codes\\Bootcamp\\test1\\test1\\Classes\\Simulador.cs",
               "RelativeToolTip": "test1\\Classes\\Simulador.cs",
-              "ViewState": "AQIAAGoAAAAAAAAAAAAAAD8BAAABAAAA",
+              "ViewState": "AQIAAHoBAAAAAAAAAAAIwIUBAAAUAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-06-11T20:37:09.07Z",
               "EditorCaption": ""
