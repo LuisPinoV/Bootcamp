@@ -36,6 +36,13 @@ namespace test1.Controllers
             return sim.actualizar();
         }
 
+        [HttpGet("actualizar_timer")]
+        public string actualizar_timer()
+        {
+            Simulador sim = new Simulador();
+            return sim.actualizar_timer();
+        }
+
         //servicios de conteo
 
         [HttpGet("contar_pacientes")]
@@ -59,11 +66,11 @@ namespace test1.Controllers
             return sim.contar_bebes();
         }
 
-        [HttpGet("contar_niños")]
-        public String contar_niños()
+        [HttpGet("contar_ninos")]
+        public String contar_ninos()
         {
             Simulador sim = new Simulador();
-            return sim.contar_niños();
+            return sim.contar_ninos();
         }
 
         [HttpGet("contar_jovenes")]
@@ -183,6 +190,35 @@ namespace test1.Controllers
         {
             Simulador sim = new Simulador();
             return sim.moda_sexo();
+        }
+
+        //alerta
+        [HttpGet("alerta_rpm")]
+        public String alerta_rpm()
+        {
+            Simulador sim = new Simulador();
+            return sim.alerta_rpm();
+        }
+
+        [HttpGet("alerta_pulse")]
+        public String alerta_pulse()
+        {
+            Simulador sim = new Simulador();
+            return sim.alerta_pulse();
+        }
+
+        [HttpGet("alerta_pres")]
+        public String alerta_pres()
+        {
+            Simulador sim = new Simulador();
+            return sim.alerta_pres();
+        }
+
+        [HttpGet("alerta_temp")]
+        public String alerta_temp()
+        {
+            Simulador sim = new Simulador();
+            return sim.alerta_temp();
         }
     }
 }

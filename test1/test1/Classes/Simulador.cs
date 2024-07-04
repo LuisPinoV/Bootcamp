@@ -51,11 +51,6 @@ namespace test1.Classes
             this.orm.InitializeDatabase();
             this.orm.InitializeTable(typeof(PacienteModel));
 
-            updateTimer = new System.Timers.Timer(5000);
-            updateTimer.Elapsed += OnUpdateEvent;
-            updateTimer.AutoReset = true; // Esto hará que se repita
-            updateTimer.Enabled = true; // Inicia el Timer
-
         }
 
         private void Insert(Mediciones obj) //fx insertar
@@ -137,10 +132,6 @@ namespace test1.Classes
 
         // Método que será llamado por el Timer
 
-        private void OnUpdateEvent(object source, ElapsedEventArgs e)
-        {
-            actualizar_timer();
-        }
         public string actualizar()
         {
             List<PacienteModel> data = orm.SelectMany<PacienteModel>();
@@ -180,7 +171,7 @@ namespace test1.Classes
             return JsonConvert.SerializeObject(data.Count(p => p.Edad >= 0 && p.Edad <= 4));
         }
 
-        public string contar_niños()
+        public string contar_ninos()
         {
             List<PacienteModel> data = orm.SelectMany<PacienteModel>();
             return JsonConvert.SerializeObject(data.Count(p => p.Edad >= 5 && p.Edad <= 12));
@@ -331,6 +322,77 @@ namespace test1.Classes
                                    .OrderByDescending(g => g.Count())
                                    .Select(g => g.Key)
                                    .FirstOrDefault());
+        }
+        //servicio de alerta
+        public string alerta_rpm()
+        {
+            List<PacienteModel> data = orm.SelectMany<PacienteModel>();
+            var resultado = new List<string>();
+            foreach (var paciente in data)
+            {
+                if (paciente.Rpm >= 12 && paciente.Rpm <= 20)
+                {
+                    resultado.Add("Normal");
+                }
+                else
+                {
+                    resultado.Add("Alerta");
+                }
+            }
+            return JsonConvert.SerializeObject(resultado);
+        }
+        public string alerta_pulse()
+        {
+            List<PacienteModel> data = orm.SelectMany<PacienteModel>();
+            var resultado = new List<string>();
+            foreach (var paciente in data)
+            {
+                if (paciente.Pulse >= 60 && paciente.Pulse <= 100)
+                {
+                    resultado.Add("Normal");
+                }
+                else
+                {
+                    resultado.Add("Alerta");
+                }
+            }
+            return JsonConvert.SerializeObject(resultado);
+        }
+
+        public string alerta_pres()
+        {
+            List<PacienteModel> data = orm.SelectMany<PacienteModel>();
+            var resultado = new List<string>();
+            foreach (var paciente in data)
+            {
+                if (paciente.Pres >= 110 && paciente.Pres <= 130)
+                {
+                    resultado.Add("Normal");
+                }
+                else
+                {
+                    resultado.Add("Alerta");
+                }
+            }
+            return JsonConvert.SerializeObject(resultado);
+        }
+
+        public string alerta_temp()
+        {
+            List<PacienteModel> data = orm.SelectMany<PacienteModel>();
+            var resultado = new List<string>();
+            foreach (var paciente in data)
+            {
+                if (paciente.Temp >= 35.6 && paciente.Temp <= 36.3)
+                {
+                    resultado.Add("Normal");
+                }
+                else
+                {
+                    resultado.Add("Alerta");
+                }
+            }
+            return JsonConvert.SerializeObject(resultado);
         }
     }
 }
