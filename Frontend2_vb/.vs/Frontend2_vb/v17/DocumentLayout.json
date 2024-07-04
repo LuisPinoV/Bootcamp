@@ -3,16 +3,12 @@
   "WorkspaceRootPath": "C:\\Users\\Marcial\\Documents\\GitHub\\Bootcamp\\Frontend2_vb\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{64CBB463-9D5C-4B16-9E0D-FBC10AF6354C}|Frontend2_vb\\Frontend2_vb.vbproj|C:\\Users\\Marcial\\Documents\\GitHub\\Bootcamp\\Frontend2_vb\\frontend2_vb\\infosv.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
+      "AbsoluteMoniker": "D:0:0:{64CBB463-9D5C-4B16-9E0D-FBC10AF6354C}|Frontend2_vb\\Frontend2_vb.vbproj|c:\\users\\marcial\\documents\\github\\bootcamp\\frontend2_vb\\frontend2_vb\\infosv.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
       "RelativeMoniker": "D:0:0:{64CBB463-9D5C-4B16-9E0D-FBC10AF6354C}|Frontend2_vb\\Frontend2_vb.vbproj|solutionrelative:frontend2_vb\\infosv.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{64CBB463-9D5C-4B16-9E0D-FBC10AF6354C}|Frontend2_vb\\Frontend2_vb.vbproj|C:\\Users\\Marcial\\Documents\\GitHub\\Bootcamp\\Frontend2_vb\\frontend2_vb\\infosv.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
       "RelativeMoniker": "D:0:0:{64CBB463-9D5C-4B16-9E0D-FBC10AF6354C}|Frontend2_vb\\Frontend2_vb.vbproj|solutionrelative:frontend2_vb\\infosv.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{64CBB463-9D5C-4B16-9E0D-FBC10AF6354C}|Frontend2_vb\\Frontend2_vb.vbproj|C:\\Users\\Marcial\\Documents\\GitHub\\Bootcamp\\Frontend2_vb\\frontend2_vb\\my project\\application.designer.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
-      "RelativeMoniker": "D:0:0:{64CBB463-9D5C-4B16-9E0D-FBC10AF6354C}|Frontend2_vb\\Frontend2_vb.vbproj|solutionrelative:frontend2_vb\\my project\\application.designer.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{64CBB463-9D5C-4B16-9E0D-FBC10AF6354C}|Frontend2_vb\\Frontend2_vb.vbproj|C:\\Users\\Marcial\\Documents\\GitHub\\Bootcamp\\Frontend2_vb\\frontend2_vb\\form2.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
@@ -26,11 +22,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 2,
               "Title": "Form2.vb",
               "DocumentMoniker": "C:\\Users\\Marcial\\Documents\\GitHub\\Bootcamp\\Frontend2_vb\\Frontend2_vb\\Form2.vb",
               "RelativeDocumentMoniker": "Frontend2_vb\\Form2.vb",
@@ -39,8 +35,7 @@
               "ViewState": "AQIAABUAAAAAAAAAAAAlwCUAAAAVAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
               "WhenOpened": "2024-06-26T15:34:17.316Z",
-              "IsPinned": true,
-              "EditorCaption": ""
+              "IsPinned": true
             },
             {
               "$type": "Document",
@@ -65,26 +60,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Application.Designer.vb",
-              "DocumentMoniker": "C:\\Users\\Marcial\\Documents\\GitHub\\Bootcamp\\Frontend2_vb\\Frontend2_vb\\My Project\\Application.Designer.vb",
-              "RelativeDocumentMoniker": "Frontend2_vb\\My Project\\Application.Designer.vb",
-              "ToolTip": "C:\\Users\\Marcial\\Documents\\GitHub\\Bootcamp\\Frontend2_vb\\Frontend2_vb\\My Project\\Application.Designer.vb",
-              "RelativeToolTip": "Frontend2_vb\\My Project\\Application.Designer.vb",
-              "ViewState": "AQIAAAkAAAAAAAAAAAAAACUAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
-              "WhenOpened": "2024-07-03T00:56:34.479Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 0,
               "Title": "InfoSV.vb",
               "DocumentMoniker": "C:\\Users\\Marcial\\Documents\\GitHub\\Bootcamp\\Frontend2_vb\\Frontend2_vb\\InfoSV.vb",
               "RelativeDocumentMoniker": "Frontend2_vb\\InfoSV.vb",
               "ToolTip": "C:\\Users\\Marcial\\Documents\\GitHub\\Bootcamp\\Frontend2_vb\\Frontend2_vb\\InfoSV.vb",
               "RelativeToolTip": "Frontend2_vb\\InfoSV.vb",
-              "ViewState": "AQIAAA0AAAAAAAAAAAAowBQAAAAAAAAA",
+              "ViewState": "AQIAAAcAAAAAAAAAAAAAAAkAAAAOAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
               "WhenOpened": "2024-06-27T02:41:02.704Z",
               "EditorCaption": ""

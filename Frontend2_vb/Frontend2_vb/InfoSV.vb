@@ -2,6 +2,7 @@
 Imports System.Net
 Imports System.Net.Http
 Imports System.Text.Json
+Imports System.Threading
 Imports Microsoft
 Imports Newtonsoft.Json
 
@@ -11,15 +12,26 @@ Public Class InfoSV
     Private Async Sub InfoSV_Load(ByVal sender As Object, ByVal e As EventArgs) Handles MyBase.Load
         Dim respuesta As String = Await GetHttp("")
         Dim lista As List(Of PacienteDatos) = JsonConvert.DeserializeObject(Of List(Of PacienteDatos))(respuesta)
-
         DataGridView1.DataSource = lista
-
         'Label8.Text = String.Join(Environment.NewLine, lista.Select(Function(a) a.Id_paciente))
         'ComboBox1.Items = String.Join(Environment.NewLine, lista.Select(Function(a) a.Id_paciente))
+    End Sub
 
+    Private Async Function InfoSV_Update() As Task(Of String)
+        Dim respuesta As String = Await GetHttp("actualizar")
+        Dim lista As List(Of PacienteDatos) = JsonConvert.DeserializeObject(Of List(Of PacienteDatos))(respuesta)
+        DataGridView1.DataSource = lista
+        DataGridView1.Refresh()
+        'Label8.Text = String.Join(Environment.NewLine, lista.Select(Function(a) a.Id_paciente))
+        'ComboBox1.Items = String.Join(Environment.NewLine, lista.Select(Function(a) a.Id_paciente))
+    End Function
 
-
-
+    Private Async Sub InfoSV_reload(ByVal sender As Object, ByVal e As EventArgs) Handles MyBase.Load
+        While (True)
+            Await InfoSV_Update()
+            Thread.Sleep(1000)
+            'Me.Refresh()
+        End While
     End Sub
 
 

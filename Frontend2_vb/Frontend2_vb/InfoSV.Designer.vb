@@ -226,10 +226,10 @@ Partial Class InfoSV
         DataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize
         DataGridView1.EditMode = DataGridViewEditMode.EditProgrammatically
         DataGridView1.GridColor = SystemColors.ActiveBorder
-        DataGridView1.Location = New Point(35, 95)
+        DataGridView1.Location = New Point(12, 95)
         DataGridView1.Name = "DataGridView1"
         DataGridView1.ReadOnly = True
-        DataGridView1.Size = New Size(640, 241)
+        DataGridView1.Size = New Size(776, 343)
         DataGridView1.TabIndex = 5
         ' 
         ' Label8
@@ -237,9 +237,8 @@ Partial Class InfoSV
         Label8.AutoSize = True
         Label8.Location = New Point(373, 22)
         Label8.Name = "Label8"
-        Label8.Size = New Size(41, 15)
+        Label8.Size = New Size(0, 15)
         Label8.TabIndex = 6
-        Label8.Text = "Label8"
         ' 
         ' NotifyIcon1
         ' 
