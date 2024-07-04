@@ -1,0 +1,34 @@
+<div class="container mt-5">
+  <h1 class="text-center">VitaLux</h1>
+  <!-- Botón de Estadísticas -->
+  <div class="mb-3">
+    <button class="btn btn-info" (click)="openStats()">Estadísticas</button>
+  </div>
+  <!-- Tabla de vitalux -->
+  <div class="table-responsive">
+    <table class="table table-striped table-hover">
+      <thead>
+        <tr>
+          <th scope="col">ID</th>
+          <th scope="col">Edad</th>
+          <th scope="col">Frecuencia Cardíaca</th>
+          <th scope="col">Presión Arterial</th>
+          <th scope="col">Frecuencia Respiratoria</th>
+          <th scope="col">Temperatura</th>
+          <th scope="col">Acciones</th> <!-- Nueva columna para acciones -->
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let sign of vitalSigns">
+          <td>{{ sign.id }}</td>
+          <td>{{ sign.age }}</td>
+          <td>{{ sign.heartRate }}</td>
+          <td>{{ sign.bloodPressure }}</td>
+          <td>{{ sign.respiratoryRate }}</td>
+          <td>{{ sign.temperature }}</td>
+          <td><button class="btn btn-info" (click)="onRowClick(sign.id)">Ver Detalles</button></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
