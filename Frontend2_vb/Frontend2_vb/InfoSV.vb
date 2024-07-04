@@ -5,35 +5,49 @@ Imports System.Text.Json
 Imports System.Threading
 Imports Microsoft
 Imports Newtonsoft.Json
+Imports System.Timers
 
 Public Class InfoSV
+    Private updateTimer As System.Timers.Timer
     'sacado de
     'https://es.stackoverflow.com/questions/436604/api-rest-en-visual-basic-cliente-windows-forms-vb-net
     Private Async Sub InfoSV_Load(ByVal sender As Object, ByVal e As EventArgs) Handles MyBase.Load
+        InitializeTimer()
         Dim respuesta As String = Await GetHttp("")
         Dim lista As List(Of PacienteDatos) = JsonConvert.DeserializeObject(Of List(Of PacienteDatos))(respuesta)
         DataGridView1.DataSource = lista
         'Label8.Text = String.Join(Environment.NewLine, lista.Select(Function(a) a.Id_paciente))
         'ComboBox1.Items = String.Join(Environment.NewLine, lista.Select(Function(a) a.Id_paciente))
     End Sub
+    Private Sub InitializeTimer()
+        ' Initialize and configure the timer
+        updateTimer = New System.Timers.Timer(5000) ' 30000 milliseconds = 30 seconds
+        AddHandler updateTimer.Elapsed, AddressOf OnTimedEvent
+        updateTimer.AutoReset = True
+        updateTimer.Enabled = True
+    End Sub
+
+    Private Async Sub OnTimedEvent(source As Object, e As ElapsedEventArgs)
+        Await InfoSV_Update()
+    End Sub
 
     Private Async Function InfoSV_Update() As Task(Of String)
         Dim respuesta As String = Await GetHttp("actualizar")
         Dim lista As List(Of PacienteDatos) = JsonConvert.DeserializeObject(Of List(Of PacienteDatos))(respuesta)
-        DataGridView1.DataSource = lista
-        DataGridView1.Refresh()
+        UpdateDataGrid(lista)
+        Return "Update completed"
         'Label8.Text = String.Join(Environment.NewLine, lista.Select(Function(a) a.Id_paciente))
         'ComboBox1.Items = String.Join(Environment.NewLine, lista.Select(Function(a) a.Id_paciente))
     End Function
 
-    Private Async Sub InfoSV_reload(ByVal sender As Object, ByVal e As EventArgs) Handles MyBase.Load
-        While (True)
-            Await InfoSV_Update()
-            Thread.Sleep(1000)
-            'Me.Refresh()
-        End While
+    Private Sub UpdateDataGrid(lista As List(Of PacienteDatos))
+        If DataGridView1.InvokeRequired Then
+            DataGridView1.Invoke(Sub() UpdateDataGrid(lista))
+        Else
+            DataGridView1.DataSource = lista
+            DataGridView1.Refresh()
+        End If
     End Sub
-
 
     Private Async Function GetHttp(entidad As String) As Task(Of String) 'entidad sera la url
         Dim oRequest As WebRequest = WebRequest.Create("https://localhost:7101/" + entidad)
